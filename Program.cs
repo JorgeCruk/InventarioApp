@@ -1,0 +1,24 @@
+﻿// ============================================================
+// SISTEMA DE INVENTARIO - Clase 1.1
+// Estado: Mensaje de bienvenida
+// ============================================================
+
+using System.Reflection;
+
+var assembly = Assembly.GetExecutingAssembly();
+var version = assembly.GetName().Version;
+
+Console.WriteLine("==========================================");
+Console.WriteLine("    SISTEMA DE GESTIÓN DE INVENTARIO      ");
+Console.WriteLine("==========================================");
+Console.WriteLine();
+Console.WriteLine($"Versión: {version}");
+Console.WriteLine($"Plataforma: {Environment.OSVersion}");
+Console.WriteLine($".NET Version: {Environment.Version}");
+Console.WriteLine();
+Console.WriteLine("Estructura del Proyecto");
+Console.WriteLine("Configuración .csproj");
+Console.WriteLine("Creación de carpeta src/");
+Console.WriteLine("Metadatos configurados");
+Console.WriteLine();
+Console.WriteLine("Próximos pasos: Crear la clase producto en src/ y defnir sus propiedades");
